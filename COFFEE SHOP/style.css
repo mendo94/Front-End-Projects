@@ -1,0 +1,43 @@
+body {
+  background-color: rgb(242, 238, 232);
+}
+
+.navbar {
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin-left: 15px;
+}
+
+.form-text {
+  margin: 5px 5px 5px 15px;
+}
+
+#submit-btn {
+  background-color: rgb(231, 142, 17);
+  color: white;
+  margin-left: 15px;
+}
+.card-deck {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container-two {
+  padding-top: 15px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+h1 {
+  text-align: center;
+}
+h4 {
+  font-weight: bold;
+}
+img {
+  width: 100%;
+  height: auto;
+  border: 2px double black;
+}
