@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Big O Notation</title>
+</head>
+
+<body>
+  Learning Objectives:
+  <ul>
+    <li>Motivate the need for Big O Notation</li>
+    <li>Know how to describe what Big O is</li>
+    <li>Be able to simplify Big O Expressions</li>
+    <li>Define "time complexity" and "space complexity"</li>
+    <li>After defining time and space complexity, evalute different algos usings Big O</li>
+    <li>Define a logarithm</li>
+  </ul>
+
+  If presented with the question: Create a function that takes an input and returns a reversed string... there are
+  various ways to tackle this question. The real question is which answer to the question is the most efficient?
+
+  Performance Matters
+
+  A simple question like reversing a string may not matter, but when you have hundreds of pieces of data, simplifying
+  code could save hours. Having long repetitive/insufficient code could slow down or crash your computer. With that
+  being said, it is also important to be able to articulate how Big O Notation works.
+
+  Let's start with an example
+
+  <!-- insert add up to function image -->
+
+  Both of the funcitons produce the same result, therefore, which one is better and what does better mean?
+
+  The answer depends on the situation but most people would agree that better means faster and less memory intensive. So
+  let's compare the two functions and see how long it takes to log 1 billion to the console.
+
+  <!-- Insert snippets -->
+
+  The times vary slightly each time you run the function, but you can see that the shorter function that does not run a
+  for loop is taking a fraction of the time to run. However, I only showed you how long the equation takes on my
+  machine... it could be much different on another person's computer - I mean, even on my computer, the times changed
+  each time I called function. So timing functions like this is not very reliable, because the timer is not precise
+  enough. Let's get into how Big O Notation can help us be more precise.
+
+  Instead of printing out how many seconds it took, we are able to count the number of simple operations the computer
+  has to perform. The efficiency is this increases due to the fact that it does not matter which computer we are using.
+  In the second function, there were three operations performed: multiplication, addition and division. No matter what
+  number is plugged in, (1 or 10 billion) there will only be three operations. In comparison to
+  the first function that contains the for loop, the operations depend on what number is plugged into the function. If 1
+  is plugged into the function it will run an addition operation 1 time, if 1 billion is plugged into <i>n</i>, it
+  performs the addition 1 billion times.
+
+
+  Algorithms will satisfy the Big O Notation if the number of simple operations the computer has to do is eventually
+  less than a constant, times the function of "n", as "n" increases.
+
+  <script src="/js/script.js"></script>
+</body>
+
+</html>

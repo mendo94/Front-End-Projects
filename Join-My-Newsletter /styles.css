@@ -1,0 +1,170 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  background-color: #0f303f;
+  overflow: hidden;
+  height: 95vh;
+}
+
+ /* NAVBAR */
+ nav {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 10px;
+ }
+ ul {
+   display: flex;
+   list-style: none;
+ }
+
+ li {
+   padding: 0 0 0 10px;
+ }
+
+   /* CONTENT */
+   .container {
+    padding: 0px, 40px;
+    margin: 40px auto;
+   background-image: linear-gradient(to right,rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url("lucas-kapla-wQLAGv4_OYs-unsplash\ \(1\).jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 90vh;
+ }
+
+ .content {
+   display: grid;
+   grid-template-columns: 65% 30%;
+   align-items: center;
+   gap: 30px;
+   justify-items: end;
+   margin-left: 20px;
+ }
+ /* TEXT */
+
+ .text-section h1{
+  font-size: 55px;
+  padding: 0px, 10px;
+ }
+
+ .awesome {
+   color: #cc581c;
+   text-decoration: underline;
+ }
+
+ #interest {
+   border: none;
+   background-color: #cc581c;
+   color: white;
+   padding: 10px 20px
+ }
+
+ #interest:active {
+   color: #e39067;
+  }
+  #ßinterest:hover{
+    background-color:  #e39067;
+ }
+ 
+/* FORM SECTION */
+form {
+  background-color: #fff;
+  color: black;
+  width: 300px;
+  padding: 10px;
+  box-shadow: 0px 7px 10px 5px rgba(225,225, 225, .2);
+  border-radius: 5%;
+}
+
+form div {
+  margin-top: 10px;
+}
+
+.sign-up {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: #135bc0;
+  color: #fff;
+  align-content: center;
+  margin-top: 20px;
+}
+
+form h3 {
+  text-align: center;
+}
+
+.wide{
+  width: 270px;
+}
+.radio {
+margin-top: -5px;
+}
+
+.hidden {
+  display: none;
+} 
+
+.pop-up {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  color: black;
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.pop-up-text a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+  border: 2px double black;
+  border-radius: 2%;
+  background-color: #cc581c;
+}
+
+a:hover {
+  background-color: #e39067;
+}
+.show-pop-up {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.75rem 3.5rem;
+  margin: 5rem 2rem;
+  border: none;
+  background-color: #fff;
+  color: #444;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+.close-pop-up {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
